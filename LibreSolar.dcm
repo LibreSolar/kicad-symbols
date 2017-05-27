@@ -4,10 +4,19 @@ $CMP +12V
 K POWER, PWR
 $ENDCMP
 #
+$CMP 24AA01
+D Microchip 24AA01 1K I2C EEPROM
+K EEPROM
+$ENDCMP
+#
 $CMP AP2210-3.3
 D 300mA low dropout linear regulator, shutdown pin, 1.5V fixed positive output, SOT-23-5 package
 K linear regulator ldo fixed positive
 F http://www.diodes.com/_files/datasheets/AP131.pdf
+$ENDCMP
+#
+$CMP AZ1117
+K linear regulator ldo fixed positive
 $ENDCMP
 #
 $CMP Coded_Switch
