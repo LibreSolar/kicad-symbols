@@ -40,9 +40,8 @@ K switched capacitor voltage doubler
 $ENDCMP
 #
 $CMP LMR16006
-D High-Voltage Input Integrated Switch Step-Down Regulator, 50V, 500mA
+D SIMPLE SWITCHER® 4V to 60V, 600mA Step-Down Regulator with Low Iq
 K switching buck converter power-supply voltage regulator
-F http://ww1.microchip.com/downloads/en/DeviceDoc/20005308C.pdf
 $ENDCMP
 #
 $CMP MCP16331-CH
