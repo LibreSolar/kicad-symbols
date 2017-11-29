@@ -1,5 +1,9 @@
 EESchema-DOCLIB  Version 2.0
 #
+$CMP +10V
+K POWER, PWR
+$ENDCMP
+#
 $CMP +12V
 K POWER, PWR
 $ENDCMP
@@ -50,6 +54,18 @@ K switching buck converter power-supply voltage regulator
 F http://ww1.microchip.com/downloads/en/DeviceDoc/20005308C.pdf
 $ENDCMP
 #
+$CMP MCP2515-E_ST
+D Stand-Alone CAN Controller with SPI Interface, TSSOP-20, Extended temperature range
+K CAN Controller SPI
+F http://ww1.microchip.com/downloads/en/DeviceDoc/21801e.pdf
+$ENDCMP
+#
+$CMP MCP2515-I/ST
+D Stand-Alone CAN Controller with SPI Interface, TSSOP-20, Industrial temperature range
+K CAN Controller SPI
+F http://ww1.microchip.com/downloads/en/DeviceDoc/21801e.pdf
+$ENDCMP
+#
 $CMP Q_NMOS
 D Transistor N-MOSFET (general)
 K nmos n-mos n-mosfet transistor
@@ -60,7 +76,7 @@ D 4 bits rotary switch
 K Rotary, Hex
 $ENDCMP
 #
-$CMP TJA1042T/3
+$CMP TJA1042T-3
 D TJA1042T/3, High-Speed CAN Transceiver, separate VIO, standby mode, SOIC-8
 K High-Speed CAN Transceiver
 F http://www.nxp.com/documents/data_sheet/TJA1042.pdf
