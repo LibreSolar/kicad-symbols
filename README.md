@@ -1,12 +1,10 @@
 # LibreSolar schematic symbols library
 
-This library collects all symbols used in the different Libre Solar designs. It should be embedded as a git submodule in a folder called "library" inside the KiCad project directory.
-
-As the Standard KiCad symbols might change without prior notice, all symbols used from the built-in library should be copied into a project specific library or this general Libre Solar library.
+This library collects symbols used in the different Libre Solar designs. It should be configured as a global library named `LibreSolar`.
 
 ## Library design rules
 
-The design rules are based on the [KiCad Library Convention](https://github.com/KiCad/kicad-library/wiki/Kicad-Library-Convention) with some exceptions.
+The design rules follow the [KiCad Library Convention](https://kicad-pcb.org/libraries/klc/).
 
 ### General rules
 
