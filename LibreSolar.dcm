@@ -1,15 +1,7 @@
 EESchema-DOCLIB  Version 2.0
 #
-$CMP +10V
-K POWER, PWR
-$ENDCMP
-#
-$CMP +12V
-K POWER, PWR
-$ENDCMP
-#
-$CMP 24AA01
-D Microchip 24AA01 1K I2C EEPROM
+$CMP 24AAxx-OT
+D Microchip 24AAxx/24LCxx I2C EEPROM, SOT-23-5
 K EEPROM
 $ENDCMP
 #
@@ -24,20 +16,19 @@ D Single power-distribution switcher
 K 1-chanel power-distribution USB
 $ENDCMP
 #
-$CMP AZ1117
-K linear regulator ldo fixed positive
-$ENDCMP
-#
 $CMP Battery
-D Polarised capacitor
+D Battery
+K battery
 $ENDCMP
 #
 $CMP C
 D Unpolarized capacitor
+K capacitor
 $ENDCMP
 #
 $CMP CP
-D Polarised capacitor
+D Polarized capacitor
+K capacitor
 $ENDCMP
 #
 $CMP CommsExt_2x8
@@ -54,16 +45,26 @@ D Diode
 $ENDCMP
 #
 $CMP D_Schottky
-D Diode Schottky
+D Schottky diode
+K schottky diode
 $ENDCMP
 #
 $CMP D_Zener
-D Diode zener
-K DEV DIODE
+D Zener diode
+K zener diode
 $ENDCMP
 #
 $CMP Fuse
 D Fuse
+$ENDCMP
+#
+$CMP Fuse_Holder
+D Fuse holder
+K fuse holder
+$ENDCMP
+#
+$CMP Fuse_PlugIn
+D Fuse (plug-in)
 $ENDCMP
 #
 $CMP INA186
@@ -108,9 +109,29 @@ K linear regulator ldo fixed positive low noise low quienscent current
 F https://www.st.com/resource/en/datasheet/ld39200.pdf
 $ENDCMP
 #
+$CMP LED
+D Light emitting diode
+K LED diode
+$ENDCMP
+#
+$CMP LED_Dual_CACA_BackToBack
+D Dual LED, cathodes on pins 1 and 3
+K LED diode bicolor dual
+F ~
+$ENDCMP
+#
+$CMP LM5107
+D 100V / 1.4-A Peak Half Bridge Gate Driver
+K half bridge gate driver
+$ENDCMP
+#
 $CMP LMR16006
 D SIMPLE SWITCHER® 4V to 60V, 600mA Step-Down Regulator with Low Iq
 K switching buck converter power-supply voltage regulator
+$ENDCMP
+#
+$CMP LMR33630
+D SIMPLE SWITCHER® 3.8V to 36V, 3A Synchronous Buck Converter With Ultra-Low EMI
 $ENDCMP
 #
 $CMP LP38693-ADJ
@@ -195,8 +216,8 @@ K ptc thermistor
 $ENDCMP
 #
 $CMP Resonator
-D Two pin crystal
-K Quartz, Resonator, Ceramic, Filter
+D Three pin ceramic resonator
+K Resonator Ceramic
 $ENDCMP
 #
 $CMP SI8621AB
@@ -207,16 +228,6 @@ $ENDCMP
 #
 $CMP SIM800L_Module
 D Red pre-assembled SIM800L module used for Arduino etc.
-$ENDCMP
-#
-$CMP SP3T
-D 3 position switch, SP3T
-K switch SP3T
-$ENDCMP
-#
-$CMP SPST
-D Interrupteur simple
-K switch
 $ENDCMP
 #
 $CMP STM32G431CBTx
@@ -231,9 +242,27 @@ K ARM Cortex-M4 STM32G3 STM32G431
 F https://www.st.com/resource/en/datasheet/stm32g431rb.pdf
 $ENDCMP
 #
+$CMP ST_Nucleo_SWD
+D STM32 Nucleo Board SWD connector
+K stm32 nucleo swd
+$ENDCMP
+#
+$CMP ST_Nucleo_SWD_5p
+D STM32 Nucleo Board SWD connector (5 pins w/o SWO)
+K stm32 nucleo swd
+$ENDCMP
+#
 $CMP SW_PUSH
 D Button
 K Switch
+$ENDCMP
+#
+$CMP Screw_Terminal_1x02_Large
+D Generic screw terminal 1x02
+$ENDCMP
+#
+$CMP Screw_Terminal_1x03_Large
+D Generic screw terminal 1x03
 $ENDCMP
 #
 $CMP Switch_DPST
