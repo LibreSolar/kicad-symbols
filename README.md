@@ -1,6 +1,11 @@
 # LibreSolar schematic symbols library
 
-This library collects symbols used in the different Libre Solar designs. It should be configured as a global library named `LibreSolar`.
+This library collects symbols used in the different Libre Solar designs.
+
+It can be included into project in two ways:
+
+1. Global library named `LibreSolar`.
+2. Project-specific library named `LibreSolar`. This repository should ideally be included into the project as a git submodule.
 
 ## Library design rules
 
